@@ -3,3 +3,14 @@ resource "local_file" "devops" {
   content = " I am learning terraform from 15 Aug 2023"
 }
 
+resource "random_string" "rand_str" {
+  length = 16
+  special = true
+  override_special = "!@#$%^&*()_+{}[]~?/<>:"
+
+}
+
+output "rand_str" {
+  value = random_string.rand_str[*].result
+}
+
