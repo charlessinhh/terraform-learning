@@ -8,3 +8,8 @@ resource "local_file' "devops_automate" {
     filename = var.filename
     content = var.content
 }
+
+
+output "devops_learning" {
+    value = var.devops_learn
+}

@@ -6,3 +6,6 @@ variable "filename" {
 variable "content" {
     default = "this file is created using terraform variables file"
 }
+
+
+variable "devops_learn" {}
