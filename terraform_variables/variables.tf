@@ -33,7 +33,7 @@ variable "aws_ec2_object" {
     type = object({
         name = string 
         instances = number
-        keys = list
+        keys = list(string)
         ami = string
     })
     default = {

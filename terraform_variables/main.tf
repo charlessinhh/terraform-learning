@@ -32,3 +32,11 @@ resource "local_file" "file2" {
     filename = var.list_file[1]
     content = var.content_map["content2"] 
 }
+
+output "aws_info_int" {
+    value = var.aws_ec2_object.instances
+}
+
+output "aws_info" {
+    value = var.aws_ec2_object
+}
